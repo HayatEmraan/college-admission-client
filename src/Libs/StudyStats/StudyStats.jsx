@@ -2,6 +2,7 @@ import React from "react";
 import Countries from "../../assets/icons/country.png";
 import College from "../../assets/icons/college.png";
 import Courses from "../../assets/icons/courses.png";
+import Scholarships from "../../assets/icons/money.png";
 const StudyStats = () => {
   return (
     <div
@@ -31,6 +32,13 @@ const StudyStats = () => {
           <div>
             <p className="text-[1.3rem]">40</p>
             <p className="text-[0.95rem]">Courses</p>
+          </div>
+        </div>
+        <div className="flex items-center justify-center gap-2">
+          <img src={Scholarships} alt="" />
+          <div>
+            <p className="text-[1.3rem]">40</p>
+            <p className="text-[0.95rem]">Scholarships</p>
           </div>
         </div>
       </div>

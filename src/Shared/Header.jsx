@@ -11,6 +11,7 @@ const Header = () => {
             <NavLink to="/">Home</NavLink>
             <NavLink to="/colleges">Colleges</NavLink>
             <NavLink to="/admission">Admission</NavLink>
+            <NavLink to="/admission">My College</NavLink>
             <NavLink to="/about-us">About Us</NavLink>
           </nav>
           <nav className="flex items-center gap-4">
