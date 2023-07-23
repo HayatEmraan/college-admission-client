@@ -1,13 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-.homebanner{
-    background-image: url("./assets/banner/banner.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: fit-content;
+.homebanner {
+  background-image: url("./assets/banner/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: fit-content;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+.destination-card:hover .card-body {
+  top: 35%;
+  transition: all 0.3s ease-in-out;
+}
+.quick-links {
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: rgba(9, 30, 66, 0.08) 0px 16px 25px;
+  padding: 16px;
+  width: fit-content;
+  margin: 0 auto;
+  color: rgb(16, 72, 195);
+}
+.quick-links p {
+  border-right: 1px solid rgb(238, 238, 238);
+  padding-right: 8px;
 }

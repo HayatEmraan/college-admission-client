@@ -3,6 +3,7 @@ import HomeBanner from "../../Libs/HomeBanner/HomeBanner";
 import StudyStats from "../../Libs/StudyStats/StudyStats";
 import CollegeCard from "../../Libs/CollegeCard/CollegeCard";
 import { Helmet } from "react-helmet-async";
+import QuickLinks from "../../Libs/QuickLinks/QuickLinks";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <HomeBanner />
       <StudyStats />
       <CollegeCard />
+      <QuickLinks />
     </div>
   );
 };

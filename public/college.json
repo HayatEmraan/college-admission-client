@@ -1,0 +1,284 @@
+[
+  {
+    "collegeName": "Texas A & M University (TAMU)",
+    "image": "https://images.shiksha.com/mediadata/images/1550038957phpvE22FT.png",
+    "location": "College Station,USA",
+    "about": "Texas A&M University was founded in 1876 and located in College Station, Texas. Texas A&M University is the first public university in Texas and one of the only two flagship universities in Texas. It is one of the only few universities in the United States to be considered to be designated a land grant, sea grant, and space grant university. Texas A&M University is a member of the Association of American Universities since 2001. As per the U.S. News & World report 2022, Texas A&M University has the fourth largest student body in the United States.",
+    "country": "USA",
+    "courses": [
+      {
+        "name": "Computer Science",
+        "duration": "4 years",
+        "fees": "$12,000 per year"
+      },
+      {
+        "name": "Electrical Engineering",
+        "duration": "4 years",
+        "fees": "$13,500 per year"
+      },
+      {
+        "name": "Business Administration",
+        "duration": "3 years",
+        "fees": "$10,000 per year"
+      },
+      {
+        "name": "Psychology",
+        "duration": "3 years",
+        "fees": "$11,200 per year"
+      }
+    ],
+    "reviews": [
+      {
+        "user": "John Doe",
+        "comment": "I had an amazing experience at Example University!",
+        "rating": 5
+      },
+      {
+        "user": "Jane Smith",
+        "comment": "The faculty is very knowledgeable and supportive.",
+        "rating": 4.5
+      }
+    ],
+    "coverImage": "https://images.shiksha.com/mediadata/images/1533808174php6h7xM4_g.jpg",
+    "admission": {
+      "eligibility": "Minimum GPA of 3.0 required.",
+      "deadline": "2023-08-31",
+      "howToApply": "Visit the university website and fill out the online application form."
+    }
+  },
+  {
+    "collegeName": "Arizona State University (ASU)",
+    "image": "https://images.shiksha.com/mediadata/images/1512924936phpCXNq6B.png",
+    "location": "Tempe, USA",
+    "about": "Arizona State University is a top-ranking public university that offers bachelor's and master's degree courses. It is a public university based in Tempe, Arizona, United States. ASU has been repeatedly ranked the most innovative university in the U.S. by top publishing houses based on its programs, groundbreaking initiatives, partnerships, and research. ASU is known for its research and innovation and has been ranked at the top position in the US for innovation by U.S. News & World Report since 2016.",
+    "country": "USA",
+    "courses": [
+      {
+        "name": "Biology",
+        "duration": "3 years",
+        "fees": "$11,800 per year"
+      },
+      {
+        "name": "Chemistry",
+        "duration": "3 years",
+        "fees": "$12,500 per year"
+      },
+      {
+        "name": "Literature",
+        "duration": "4 years",
+        "fees": "$10,800 per year"
+      },
+      {
+        "name": "History",
+        "duration": "3 years",
+        "fees": "$11,000 per year"
+      }
+    ],
+    "reviews": [
+      {
+        "user": "Sarah Johnson",
+        "comment": "The campus is beautiful, and the professors are top-notch.",
+        "rating": 4.8
+      },
+      {
+        "user": "Michael Brown",
+        "comment": "I learned a lot during my time here.",
+        "rating": 4.2
+      }
+    ],
+    "coverImage": "https://images.shiksha.com/mediadata/images/1533206394phpNbEclA_g.jpg",
+    "admission": {
+      "eligibility": "Entrance exam required for all courses.",
+      "deadline": "2023-09-15",
+      "howToApply": "Download the application form from the college website and submit it in person."
+    }
+  },
+  {
+    "collegeName": "University of Canberra ",
+    "image": "https://images.shiksha.com/mediadata/images/1550037648phppjDerw.png",
+    "location": "Canberra, Australia",
+    "about": "Established in 1967, the University of Canberra is an open university which is associated with the Association of Southeast Asian Institutions of Higher Learning and the New Generation Universities. Earlier, the university was known as the Canberra College of Advanced Education. It gained the status of a university in 1990. A Stone Day is celebrated at the university which is known to be a remark of its establishment. It continues throughout the week. It is now called the Stonefest and is among the most popular music festivals in Australia.",
+    "country": "Australia",
+    "courses": [
+      {
+        "name": "Mechanical Engineering",
+        "duration": "4 years",
+        "fees": "$14,000 per year"
+      },
+      {
+        "name": "Economics",
+        "duration": "3 years",
+        "fees": "$12,500 per year"
+      },
+      {
+        "name": "English Literature",
+        "duration": "3 years",
+        "fees": "$11,800 per year"
+      },
+      {
+        "name": "Chemical Engineering",
+        "duration": "4 years",
+        "fees": "$15,200 per year"
+      }
+    ],
+    "reviews": [
+      {
+        "user": "Emily White",
+        "comment": "I loved my time at ABC University!",
+        "rating": 4.7
+      },
+      {
+        "user": "Alex Turner",
+        "comment": "The campus facilities are excellent.",
+        "rating": 4.3
+      }
+    ],
+    "coverImage": "https://images.shiksha.com/mediadata/images/1535352060phplKyc8R_g.jpg",
+    "admission": {
+      "eligibility": "Entrance exam and interview required.",
+      "deadline": "2023-09-30",
+      "howToApply": "Submit the online application and schedule the entrance exam."
+    }
+  },
+  {
+    "collegeName": "University of Toronto",
+    "image": "https://images.shiksha.com/mediadata/images/1550037915phpqOlh43.png",
+    "location": "Toronto, Canada",
+    "about": "Founded in 1807, the University of Toronto is a public research university located in Queen’s Park, Toronto, Ontario. The University of Toronto is a leader in research-based start-ups, inventions, licenses, and options (AUTM). Entrepreneurs at the University of Toronto have secured an investment of more than CAD 1.5 billion in investment and created more than 500 start-up companies over the past decade. The University of Toronto is among the top university-managed business incubators in the world. Total student enrollment in fall 2021-22 including all three campuses of the University of Toronto was 97,066. Out of these, 4,927 were graduate international students and 22,203 were undergradaute international students. The University of Toronto fees varies for each academic year, however, you can check the previous year's fees to get an idea of the amount you are required to pay for the tuition.",
+    "country": "Canada",
+    "courses": [
+      {
+        "name": "Marketing",
+        "duration": "3 years",
+        "fees": "$11,000 per year"
+      },
+      {
+        "name": "Civil Engineering",
+        "duration": "4 years",
+        "fees": "$13,500 per year"
+      },
+      {
+        "name": "Sociology",
+        "duration": "3 years",
+        "fees": "$10,200 per year"
+      },
+      {
+        "name": "Computer Animation",
+        "duration": "3 years",
+        "fees": "$12,800 per year"
+      }
+    ],
+    "reviews": [
+      {
+        "user": "Oliver Green",
+        "comment": "The professors are very supportive and knowledgeable.",
+        "rating": 4.6
+      },
+      {
+        "user": "Sophia Miller",
+        "comment": "Great college for arts and technology courses.",
+        "rating": 4.2
+      }
+    ],
+    "coverImage": "https://images.shiksha.com/mediadata/images/1533275386phpeOjM3L_g.jpg",
+    "admission": {
+      "eligibility": "Minimum GPA of 2.5 required.",
+      "deadline": "2023-08-15",
+      "howToApply": "Fill out the application form and submit it via email."
+    }
+  },
+  {
+    "collegeName": "Trinity College Dublin",
+    "image": "https://images.shiksha.com/mediadata/images/1549971636phpUxnzhu.jpeg",
+    "location": "City T, Country U",
+    "about": "Trinity College Dublin is Ireland’s leading university and has been ranked 98th by QS in its World University Ranking 2023. Global ranking providers placed Trinity College Dublin Ranking among the top universities in the world. It is one of the oldest universities with its history going back to 1592. Trinity College has a reputation for excellence in education, research, and innovation.",
+    "country": "Ireland",
+    "courses": [
+      {
+        "name": "Physics",
+        "duration": "4 years",
+        "fees": "$12,500 per year"
+      },
+      {
+        "name": "Mathematics",
+        "duration": "3 years",
+        "fees": "$10,800 per year"
+      },
+      {
+        "name": "Biochemistry",
+        "duration": "4 years",
+        "fees": "$13,200 per year"
+      },
+      {
+        "name": "Environmental Science",
+        "duration": "3 years",
+        "fees": "$11,500 per year"
+      }
+    ],
+    "reviews": [
+      {
+        "user": "Daniel Harris",
+        "comment": "Excellent faculty and research opportunities.",
+        "rating": 4.9
+      },
+      {
+        "user": "Ava Martinez",
+        "comment": "I enjoyed the hands-on approach to learning.",
+        "rating": 4.4
+      }
+    ],
+    "coverImage": "https://images.shiksha.com/mediadata/images/1506081013phpIBVFp2_g.jpg",
+    "admission": {
+      "eligibility": "Entrance exam and interview required.",
+      "deadline": "2023-09-01",
+      "howToApply": "Submit the online application and prepare for the entrance exam."
+    }
+  },
+  {
+    "collegeName": "Harvard University",
+    "image": "https://images.shiksha.com/mediadata/images/1549964678phpqbJKyb.jpeg",
+    "location": "City V, Country W",
+    "about": "Founded in 1636, Harvard University is the oldest higher education institute in the US It is one of the top private Ivy League universities located in Cambridge, Massachusetts, United States. Furthermore, the university is well known for being a top university not just in the US but also around the world due to its reputation, influence, and academic heritage. It is ranked in the top 10 universities in the world in 2023 by QS, Times Higher Education, and US News & World Report. Read: Top 100 Universities in USA",
+    "country": "USA",
+    "courses": [
+      {
+        "name": "MBA (Master of Business Administration)",
+        "duration": "2 years",
+        "fees": "$20,000 per year"
+      },
+      {
+        "name": "International Business",
+        "duration": "3 years",
+        "fees": "$18,500 per year"
+      },
+      {
+        "name": "Finance and Accounting",
+        "duration": "2 years",
+        "fees": "$19,000 per year"
+      },
+      {
+        "name": "Marketing Management",
+        "duration": "2 years",
+        "fees": "$17,800 per year"
+      }
+    ],
+    "reviews": [
+      {
+        "user": "Sophie Turner",
+        "comment": "Studying at Global Business School was a transformative experience.",
+        "rating": 4.7
+      },
+      {
+        "user": "Benjamin Lee",
+        "comment": "The networking opportunities here are unparalleled.",
+        "rating": 4.5
+      }
+    ],
+    "coverImage": "https://images.shiksha.com/mediadata/images/1533035366php2MWezz_g.jpg",
+    "admission": {
+      "eligibility": "Bachelor's degree and GMAT/GRE scores required.",
+      "deadline": "2023-10-31",
+      "howToApply": "Submit the online application and provide necessary documents."
+    }
+  }
+]
