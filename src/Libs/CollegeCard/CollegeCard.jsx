@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 const CollegeCard = () => {
   const [data, setData] = React.useState([]);
   useEffect(() => {
-    fetch("college.json")
+    fetch("http://localhost:3000/colleges")
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => console.log(err));

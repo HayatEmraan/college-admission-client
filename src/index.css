@@ -23,11 +23,57 @@ body {
   border-radius: 8px;
   box-shadow: rgba(9, 30, 66, 0.08) 0px 16px 25px;
   padding: 16px;
-  width: fit-content;
   margin: 0 auto;
   color: rgb(16, 72, 195);
 }
 .quick-links p {
   border-right: 1px solid rgb(238, 238, 238);
   padding-right: 8px;
+}
+.details-photo {
+  position: relative;
+  bottom: 50px;
+  width: 160px;
+  left: 20px;
+  height: 160px;
+  padding: 24px;
+  background: #fcfcfc;
+  border: 2px solid #fff;
+  box-shadow: 0 2.62857px 2.62857px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(1.31429px);
+  border-radius: 15px;
+  margin-right: 24px;
+  flex-shrink: 0;
+}
+.details-tabs-data {
+  display: flex;
+  flex-direction: column;
+  background: #f6f8fe;
+  box-shadow: 0 0 4px rgba(16, 24, 64, 0.12);
+  border-radius: 12px;
+}
+.table-class {
+  width: 100%;
+  border: 1px solid #76a5bf;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  display: table;
+}
+.table-class td,
+.table-class th {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: start;
+}
+.table-class th{
+  background-color: #054667;
+  color: #fff;
+}
+@media screen and (max-width: 1024px) {
+  .quick-links p {
+    border-right: none;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding-bottom: 8px;
+    font-size: 1.2rem;
+  }
 }

@@ -12,7 +12,7 @@ const StudyStats = () => {
       <h1 className="text-2xl text-center py-3 font-medium">
         CAC Study Abroad has information about
       </h1>
-      <div className="flex items-center justify-center gap-12 pb-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 items-center max-w-lg mx-auto justify-center gap-12 pb-4">
         <div className="flex items-center justify-center gap-2">
           <img src={Countries} alt="" />
           <div>

@@ -2,15 +2,29 @@ import React, { useContext } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { BsGithub } from "react-icons/bs";
 import { LayerContext } from "../Context/AuthContext";
+import { toast } from "react-hot-toast";
 const SignUp = () => {
   const { GoogleAuth, GithubAuth, createAccount } = useContext(LayerContext);
   const handleForm = (e) => {
     e.preventDefault();
     const middle = e.target;
     const email = middle.email.value;
-      const password = middle.password.value;
-      const name = middle.name.value;
-    createAccount(email, password, name);
+    const password = middle.password.value;
+    const name = middle.name.value;
+    console.log(email, name);
+    fetch("http://localhost:3000/users", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({email, name}),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        createAccount(email, password, name);
+        toast.success("Account created successfully");
+      })
+      .catch((err) => toast.error("Something went wrong. Try again."));
   };
   return (
     <div className="max-w-7xl mx-auto">

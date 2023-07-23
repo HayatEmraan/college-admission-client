@@ -5,6 +5,9 @@ import Client from "../LayOut/Client";
 import Home from "../Pages/Home/Home";
 import About from "../Pages/About/About";
 import NotFound from "../Pages/NotFound/NotFound";
+import Colleges from "../Pages/Colleges/Colleges";
+import Admission from "../Pages/Admission/Admission";
+import Details from "../Pages/Details/Details";
 
 export const Routes = createBrowserRouter([
   {
@@ -16,12 +19,16 @@ export const Routes = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "about-us",
-        element: <About />,
+        path: "colleges",
+        element: <Colleges />,
       },
       {
-        path: "colleges",
-        element: <SignIn />,
+        path: "admission",
+        element: <Admission />,
+      },
+      {
+        path: "about-us",
+        element: <About />,
       },
       {
         path: "login",
@@ -31,11 +38,17 @@ export const Routes = createBrowserRouter([
         path: "signup",
         element: <SignUp />,
       },
+      {
+        path: "details/:id",
+        element: <Details />,
+        loader: ({ params }) =>
+          fetch(`http://localhost:3000/colleges/${params.id}`),
+      },
     ],
   },
   // 404 page
   {
     path: "*",
-    element: <NotFound/>
-  }
+    element: <NotFound />,
+  },
 ]);
