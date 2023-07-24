@@ -45,7 +45,7 @@ const Submission = () => {
     })
       .then((res) => res.json())
       .then((result) => {
-        if ((result.result = "Course user already exists!")) {
+        if (result.result === "Course user already exists!") {
           toast.error("You've already applied an university!");
         } else {
           toast.success("Successfully applied!");
