@@ -8,6 +8,7 @@ import NotFound from "../Pages/NotFound/NotFound";
 import Colleges from "../Pages/Colleges/Colleges";
 import Admission from "../Pages/Admission/Admission";
 import Details from "../Pages/Details/Details";
+import Profile from "../Pages/Profile/Profile";
 
 export const Routes = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ export const Routes = createBrowserRouter([
         element: <About />,
       },
       {
+        path: "profile",
+        element: <Profile />,
+      },
+      {
         path: "login",
         element: <SignIn />,
       },
@@ -42,7 +47,9 @@ export const Routes = createBrowserRouter([
         path: "details/:id",
         element: <Details />,
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/colleges/${params.id}`),
+          fetch(
+            `https://college-admission-server-ten.vercel.app/colleges/${params.id}`
+          ),
       },
     ],
   },

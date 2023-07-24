@@ -12,19 +12,7 @@ const SignUp = () => {
     const password = middle.password.value;
     const name = middle.name.value;
     console.log(email, name);
-    fetch("http://localhost:3000/users", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({email, name}),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        createAccount(email, password, name);
-        toast.success("Account created successfully");
-      })
-      .catch((err) => toast.error("Something went wrong. Try again."));
+    createAccount(email, password, name);
   };
   return (
     <div className="max-w-7xl mx-auto">

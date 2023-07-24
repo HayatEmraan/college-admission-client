@@ -12,6 +12,7 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { toast } from "react-hot-toast";
+import { useSignup } from "../Hooks/useSignup";
 
 export const LayerContext = createContext(null);
 const AuthContext = ({ children }) => {
@@ -27,7 +28,9 @@ const AuthContext = ({ children }) => {
   const GoogleAuth = () => {
     setLoading(true);
     return signInWithPopup(auth, GoogleProvider)
-      .then(() => {})
+      .then(() => {
+        useSignup(auth.currentUser.email, auth.currentUser.displayName);
+      })
       .catch((error) => console.log(error.message));
   };
 
@@ -35,7 +38,9 @@ const AuthContext = ({ children }) => {
   const GithubAuth = () => {
     setLoading(true);
     return signInWithPopup(auth, GithubProvider)
-      .then(() => {})
+      .then(() => {
+        useSignup(auth.currentUser.email, auth.currentUser.displayName);
+      })
       .catch((error) => toast.error("Something went wrong. Try again."));
   };
 
@@ -47,6 +52,7 @@ const AuthContext = ({ children }) => {
         updateProfile(auth.currentUser, {
           displayName: name,
         });
+        useSignup(email, name);
       })
       .catch((error) => {
         if (error.message === "Firebase: Error (auth/email-already-in-use).") {

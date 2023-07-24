@@ -1,17 +1,18 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { CiLocationOn } from "react-icons/ci";
+import { GoArrowUpRight } from "react-icons/go";
 const Colleges = () => {
   const [courses, setCourses] = React.useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/colleges")
+    fetch("https://college-admission-server-ten.vercel.app/colleges")
       .then((res) => res.json())
       .then((data) => setCourses(data))
       .catch((err) => console.log(err));
   }, []);
   return (
-    <div className="max-w-7xl mx-auto p-2 sm:px-6 lg:px-8">
-      <h2 className="text-6xl text-center my-12 text-[#D0ABFF]">
+    <div className="max-w-7xl mx-auto p-2 sm:px-6 lg:px-8 mb-8">
+      <h2 className="text-6xl text-center mt-12 mb-4 text-[#D0ABFF]">
         Your Dream College Is Here.
       </h2>
       {courses.map((course, index) => {
@@ -60,8 +61,9 @@ const Colleges = () => {
               </div>
             </div>
             <div className="flex flex-col justify-around mr-6 text-end">
-              <Link to={`/admission/${course._id}`}>Courses</Link>
-              <Link to={`/details/${course._id}`}>Details</Link>
+              <Link to={`/details/${course._id}`}>
+                <GoArrowUpRight size={25} />
+              </Link>
             </div>
           </div>
         );

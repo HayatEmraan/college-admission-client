@@ -7,7 +7,7 @@ import {
   BsYoutube,
 } from "react-icons/bs";
 import logo from "../assets/logo/logo.png";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { LayerContext } from "../Context/AuthContext";
 const Header = () => {
@@ -33,7 +33,7 @@ const Header = () => {
             <nav className="items-center gap-4 hidden lg:flex">
               {user ? (
                 <>
-                  <p>{user?.email}</p>
+                  <Link to="/profile">{user?.email}</Link>
                   <button>LogOut</button>
                 </>
               ) : (
@@ -64,7 +64,7 @@ const Header = () => {
           <NavLink to="/about-us">About Us</NavLink>
           {user ? (
             <>
-              <p>{user?.email}</p>
+              <Link to="/profile">{user?.email}</Link>
               <p className="cursor-pointer">LogOut</p>
             </>
           ) : (
