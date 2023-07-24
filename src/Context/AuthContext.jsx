@@ -75,7 +75,7 @@ const AuthContext = ({ children }) => {
   const logout = () => {
     setLoading(true);
     return signOut(auth)
-      .then(() => {})
+      .then(() => toast.success("Successfully Logged out!"))
       .catch((error) => toast.error("Something went wrong. Try again."));
   };
   useEffect(() => {
@@ -84,7 +84,6 @@ const AuthContext = ({ children }) => {
         setUser(user);
       } else {
         setUser(null);
-        console.log("user is not logged in");
       }
       setLoading(false);
     });
@@ -101,7 +100,6 @@ const AuthContext = ({ children }) => {
     login,
     logout,
   };
-  console.log(user);
   return (
     <LayerContext.Provider value={authInfo}>{children}</LayerContext.Provider>
   );

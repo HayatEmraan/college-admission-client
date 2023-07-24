@@ -13,7 +13,7 @@ import { LayerContext } from "../Context/AuthContext";
 const Header = () => {
   const [isHidden, setIsHidden] = React.useState(false);
   const location = useLocation();
-  const { user } = useContext(LayerContext);
+  const { user, logout } = useContext(LayerContext);
   useEffect(() => {
     setIsHidden(false);
   }, [location.pathname]);
@@ -22,19 +22,21 @@ const Header = () => {
       <div className="bg-[#007075] text-white">
         <div className="max-w-7xl mx-auto p-2 sm:px-6 lg:px-8">
           <header className="flex items-center justify-between">
-            <img src={logo} className="h-12" alt="" />
+            <Link to="/">
+              <img src={logo} className="h-12" alt="logo" />
+            </Link>
             <nav className="items-center gap-4 hidden lg:flex">
               <NavLink to="/">Home</NavLink>
               <NavLink to="/colleges">Colleges</NavLink>
               <NavLink to="/admission">Admission</NavLink>
-              <NavLink to="/admission">My College</NavLink>
+              <NavLink to="/my-college">My College</NavLink>
               <NavLink to="/about-us">About Us</NavLink>
             </nav>
             <nav className="items-center gap-4 hidden lg:flex">
               {user ? (
                 <>
                   <Link to="/profile">{user?.email}</Link>
-                  <button>LogOut</button>
+                  <button onClick={logout}>LogOut</button>
                 </>
               ) : (
                 <>
@@ -60,7 +62,7 @@ const Header = () => {
           <NavLink to="/">Home</NavLink>
           <NavLink to="/colleges">Colleges</NavLink>
           <NavLink to="/admission">Admission</NavLink>
-          <NavLink to="/admission">My College</NavLink>
+          <NavLink to="/my-college">My College</NavLink>
           <NavLink to="/about-us">About Us</NavLink>
           {user ? (
             <>

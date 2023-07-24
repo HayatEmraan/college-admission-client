@@ -40,11 +40,16 @@ const Footer = () => {
         <hr />
         <div className="py-4">
           <h1>
-            UC acknowledges the Ngunnawal people, traditional custodians of the
-            lands where Bruce campus is situated. We wish to acknowledge and
-            respect their continuing culture and the contribution they make to
-            the life of Canberra and the region. We also acknowledge all other
-            First Nations Peoples on whose lands we gather.
+            Disclaimer: The files and designs used on this website are for
+            personal practice and educational purposes only. All copyrights and
+            intellectual property rights belong to their respective owners. This
+            practice exercise does not claim ownership or intend to infringe
+            upon original content. Any resemblance is coincidental and not for
+            reproduction or distribution. The projects created will not be used
+            for commercial purposes. Users are responsible for adhering to
+            copyright laws. By using these materials, you agree to this
+            disclaimer and its limitations. Respect content creators and avoid
+            unauthorized use of copyrighted materials for commercial gain.
           </h1>
         </div>
         {/* Practice copyright  */}

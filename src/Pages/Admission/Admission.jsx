@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { CiLocationOn } from "react-icons/ci";
 import { BiMinus, BiPlus } from "react-icons/bi";
 import AccordionData from "../../Libs/AccordionData/AccordionData";
+import { Helmet } from "react-helmet-async";
 const Admission = () => {
   const [courses, setCourses] = React.useState([]);
   const [collapse, setCollapse] = React.useState(false);
@@ -19,7 +20,10 @@ const Admission = () => {
   };
   return (
     <div className="max-w-7xl mx-auto p-2 sm:px-6 lg:px-8 mb-8">
-      <h2 className="text-6xl text-center mt-12 mb-4 text-[#D0ABFF]">
+      <Helmet>
+        <title>CAC | Admission</title>
+      </Helmet>
+      <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center mt-12 mb-4 text-[#D0ABFF]">
         Your Dream College Admission Is Here.
       </h2>
       {courses.map((course, index) => {
@@ -27,11 +31,11 @@ const Admission = () => {
           <div key={index}>
             <div
               onClick={() => handleToggle(course._id)}
-              className={`flex justify-between shadow-lg  rounded-md cursor-pointer ${
+              className={`flex justify-between shadow-lg items-baseline md:items-center mb-4 rounded-md box-border ${
                 course.isCollapsed ? "" : "mb-4"
               }`}
             >
-              <div className="flex items-center gap-4 p-4">
+              <div className="md:flex items-center gap-4 p-4">
                 <img
                   src={course.image}
                   alt=""
@@ -45,7 +49,7 @@ const Admission = () => {
                     <p className="flex items-center gap-1">
                       <CiLocationOn /> {course.location}
                     </p>
-                    <div className="flex gap-4 items-center">
+                    <div className="md:flex no-scrollbar hidden gap-4 items-center whitespace-nowrap overflow-x-auto no-scrollbar">
                       <p>
                         <span className="bg-[#007c3d] rounded-lg text-white px-1 text-sm">
                           A++

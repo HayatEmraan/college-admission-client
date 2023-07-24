@@ -8,7 +8,6 @@ const CollegeCard = () => {
       .then((data) => setData(data))
       .catch((err) => console.log(err));
   }, []);
-  console.log(data);
   return (
     <div className="max-w-7xl mx-auto p-2 sm:px-6 lg:px-8">
       <h1 className="text-4xl font-medium mt-16">

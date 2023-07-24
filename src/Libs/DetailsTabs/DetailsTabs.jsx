@@ -2,14 +2,16 @@ import React, { useEffect } from "react";
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 import { MdVerifiedUser } from "react-icons/md";
 import { AiFillStar } from "react-icons/ai";
+import { Link } from "react-router-dom";
 const DetailsTabs = ({ collegeDetails }) => {
-  console.log(collegeDetails);
   const [reviewsData, setReviewsData] = React.useState(collegeDetails.reviews);
   return (
     <div>
       <Tabs>
         <TabList
-          className={"flex gap-4"}
+          className={
+            "flex gap-4 overflow-x-auto whitespace-nowrap no-scrollbar"
+          }
           style={{
             boxShadow: "0 6px 16px rgba(16,24,64,.06)",
             padding: "12px 20px 16px",
@@ -134,7 +136,11 @@ const DetailsTabs = ({ collegeDetails }) => {
                           <td>{course.duration}</td>
                           <td>{course.fees}</td>
                           <td>{collegeDetails.admission.deadline}</td>
-                          <td>Apply</td>
+                          <td className="text-green-600">
+                            <Link to={`/admission/${collegeDetails._id}`}>
+                              Apply
+                            </Link>
+                          </td>
                         </tr>
                       );
                     })}

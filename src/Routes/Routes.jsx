@@ -9,6 +9,9 @@ import Colleges from "../Pages/Colleges/Colleges";
 import Admission from "../Pages/Admission/Admission";
 import Details from "../Pages/Details/Details";
 import Profile from "../Pages/Profile/Profile";
+import Private from "./Private";
+import MyCollege from "../Pages/MyCollege/MyCollege";
+import Submission from "../Pages/Admission/Submission";
 
 export const Routes = createBrowserRouter([
   {
@@ -28,12 +31,36 @@ export const Routes = createBrowserRouter([
         element: <Admission />,
       },
       {
+        path: "admission/:id",
+        element: (
+          <Private>
+            <Submission />
+          </Private>
+        ),
+        loader: ({ params }) =>
+          fetch(
+            `https://college-admission-server-ten.vercel.app/colleges/${params.id}`
+          ),
+      },
+      {
+        path: "my-college",
+        element: (
+          <Private>
+            <MyCollege />
+          </Private>
+        ),
+      },
+      {
         path: "about-us",
         element: <About />,
       },
       {
         path: "profile",
-        element: <Profile />,
+        element: (
+          <Private>
+            <Profile />
+          </Private>
+        ),
       },
       {
         path: "login",

@@ -38,7 +38,7 @@ const About = () => {
             );
           })}
       </div>
-      <div className="mx-auto container mt-12 text-center text-slate-500 pb-12">
+      <div className="mx-auto container mt-12 px-4 text-slate-500 pb-12">
         <h2>
           Disclaimer : -{" "}
           <span>

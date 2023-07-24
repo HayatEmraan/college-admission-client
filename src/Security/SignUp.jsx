@@ -11,7 +11,6 @@ const SignUp = () => {
     const email = middle.email.value;
     const password = middle.password.value;
     const name = middle.name.value;
-    console.log(email, name);
     createAccount(email, password, name);
   };
   return (

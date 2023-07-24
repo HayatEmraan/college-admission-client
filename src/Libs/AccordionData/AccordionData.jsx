@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const AccordionData = ({ collegeDetails }) => {
   return (
@@ -23,7 +24,9 @@ const AccordionData = ({ collegeDetails }) => {
                     <td>{course.duration}</td>
                     <td>{course.fees}</td>
                     <td>{collegeDetails.admission.deadline}</td>
-                    <td>Apply</td>
+                    <td className="text-green-600">
+                      <Link to={`/admission/${collegeDetails._id}`}>Apply</Link>
+                    </td>
                   </tr>
                 );
               })}

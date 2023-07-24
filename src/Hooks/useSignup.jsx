@@ -18,7 +18,6 @@ export const useSignup = (email, name) => {
       } else {
         toast.success("Account created successfully");
       }
-      console.log(result);
     })
     .catch((error) => {
       toast.error("Something went wrong. Try again.");
