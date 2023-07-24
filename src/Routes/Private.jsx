@@ -4,10 +4,10 @@ import { Navigate, useLocation } from "react-router-dom";
 
 const Private = ({ children }) => {
   const { user, loading } = useContext(LayerContext);
+  const location = useLocation();
   if (loading) {
     return;
   }
-  const location = useLocation();
   if (user) {
     return children;
   }

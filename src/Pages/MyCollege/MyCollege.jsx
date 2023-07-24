@@ -14,18 +14,22 @@ const MyCollege = () => {
     setIsHidden(!isHidden);
   };
   useEffect(() => {
-    fetch(`http://localhost:3000/getBookCourses/${user?.email}`)
+    fetch(
+      `https://college-admission-server-ten.vercel.app/getBookCourses/${user?.email}`
+    )
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => console.log(err));
   }, []);
   useEffect(() => {
-    fetch(
-      `https://college-admission-server-ten.vercel.app/colleges/${data[0]?.uniID}`
-    )
-      .then((res) => res.json())
-      .then((data) => setCollegeData(data))
-      .catch((err) => console.log(err));
+    if (data.length > 0) {
+      fetch(
+        `https://college-admission-server-ten.vercel.app/colleges/${data[0]?.uniID}`
+      )
+        .then((res) => res.json())
+        .then((data) => setCollegeData(data))
+        .catch((err) => console.log(err));
+    }
   }, [data]);
   return (
     <div>

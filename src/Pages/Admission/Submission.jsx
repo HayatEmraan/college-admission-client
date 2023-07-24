@@ -22,7 +22,7 @@ const Submission = () => {
     const courseName = middle.courseName.value;
     const uniName = middle.uniName.value;
     const location = middle.location.value;
-    fetch("http://localhost:3000/bookCourses", {
+    fetch("https://college-admission-server-ten.vercel.app/bookCourses", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

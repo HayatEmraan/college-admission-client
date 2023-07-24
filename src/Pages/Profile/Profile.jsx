@@ -6,7 +6,9 @@ const Profile = () => {
   const { user } = useContext(LayerContext);
   const [data, setData] = React.useState([]);
   useEffect(() => {
-    fetch(`http://localhost:3000/getBookCourses/${user?.email}`)
+    fetch(
+      `https://college-admission-server-ten.vercel.app/getBookCourses/${user?.email}`
+    )
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => console.log(err));

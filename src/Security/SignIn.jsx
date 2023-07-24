@@ -2,14 +2,19 @@ import React, { useContext } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { BsGithub } from "react-icons/bs";
 import { LayerContext } from "../Context/AuthContext";
+import { useLocation, useNavigate } from "react-router-dom";
 const SignIn = () => {
   const { GoogleAuth, GithubAuth, login } = useContext(LayerContext);
+  const location = useLocation();
+  const from = location?.state?.from?.pathname || "/";
+  const navigate = useNavigate();
   const handleForm = (e) => {
     e.preventDefault();
     const middle = e.target;
     const email = middle.email.value;
     const password = middle.password.value;
     login(email, password);
+    navigate(from, { replace: true });
   };
   return (
     <div className="max-w-7xl mx-auto">
